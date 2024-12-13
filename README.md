@@ -56,9 +56,24 @@ Developed by: Jagadeesh.A
 RegisterNumber: 24010183
 ```
 PROGRAM F1:
-![Screenshot (51)](https://github.com/user-attachments/assets/ed2edbae-a830-4898-a628-f6efc4b1d78f)
+```
+module half_adder(a,b,sum,carry);
+input a,b;
+output sum,carry;
+assign sum= (a ^ b);
+assign carry= ( a & b);
+endmodule
+```
+
 PROGRAM F2:
-![Screenshot (54)](https://github.com/user-attachments/assets/d0434e91-44ed-4728-8848-04290a763014)
+```
+module half_subtractor(a,b,difference,borrow);
+input a,b;
+output difference,borrow;
+assign difference= (a ^ b);
+assign borrow= ( ~a & b);
+endmodule
+```
 
 
 
